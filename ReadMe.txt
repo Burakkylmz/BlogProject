@@ -154,9 +154,9 @@ Project Documantation
         public virtual List<Blog> HomeBlogs { get; set; }
     }
 
+	<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0"></DotNetCliToolReference>
 
-
-
+	Microsoft.EntityFrameworkCore.Tools.DotNet
 
 
 	
