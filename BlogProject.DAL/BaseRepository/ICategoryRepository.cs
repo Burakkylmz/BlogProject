@@ -11,7 +11,7 @@ namespace BlogProject.DAL.BaseRepository
         Category GetById(int id);
         IQueryable<Category> GetAll();
         void AddCategory(Category entity);
-        void UpadateCategory(Category entity);
+        void UpdateCategory(Category entity);
         void DeleteCategory(int id);
         void SaveCategory(Category entity);
     }

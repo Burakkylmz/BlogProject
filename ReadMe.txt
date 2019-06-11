@@ -120,6 +120,46 @@ Project Documantation
 
 		9.2.1. Update-Database
 
+10. Right click on your project then choose Open FOlder in FÝle Explorer
+	
+	10.1. Select project file path and so copy it
+	10.2. Open any terminal in your pc
+	10.4. Type the following code into your terminal (PowerShell or Cmd)
+
+	cd project filen path => chang it your project path
+
+	10.5. Add the following codeunder the package.json file
+
+	"dependencies": {
+		"bootstrap":"4.3.1"
+	}
+
+	10.6. Type the following code proper method (Configure) into the Statup.cs Files
+
+	app.UseStaticFiles(new StaticFileOptions
+     {
+         FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "node_modules")), RequestPath = "/modules"
+     });
+
+11. Right click into Controllers Folder and add a new empty contoroller name is Home
+
+	11.1. Type the followinf code into HomeController.cs
+
+	public IAcionResult Index()
+	{
+		return View();
+	}
+
+	public IActionResult List()
+	{
+		retun View();
+	}
+
+	public IActionResult Details()
+	{
+		return View();
+	}
+
 
 
 
