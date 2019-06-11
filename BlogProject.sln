@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProject.UI", "BlogProject.UI\BlogProject.UI.csproj", "{7BBF2BBF-7828-4107-94B8-796A899EA69B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogProject.UI", "BlogProject.UI\BlogProject.UI.csproj", "{7BBF2BBF-7828-4107-94B8-796A899EA69B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProject.DAL", "BlogProject.DAL\BlogProject.DAL.csproj", "{28DB1331-EB51-4010-95C9-17EAA0709D15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogProject.DAL", "BlogProject.DAL\BlogProject.DAL.csproj", "{28DB1331-EB51-4010-95C9-17EAA0709D15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogProject.Model", "BlogProject.Model\BlogProject.Model.csproj", "{43EBD1E8-844B-4307-A99C-61DDD217A5EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlogProject.Model", "BlogProject.Model\BlogProject.Model.csproj", "{43EBD1E8-844B-4307-A99C-61DDD217A5EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA84AD52-23B6-4F94-A763-63D61FFA3611}"
 	ProjectSection(SolutionItems) = preProject

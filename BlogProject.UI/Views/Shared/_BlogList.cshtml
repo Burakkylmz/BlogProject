@@ -1,0 +1,30 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+@model IEnumerable<Blog>
+
+@if (Model.Count() == 0)
+{
+    <div class="alert alert-warning">There is no record</div>
+}
+else
+{
+	@foreach (var item in Model)
+    {
+        <div class="card mb-2">
+            <div class="card-header">
+                @item.Title
+            </div>
+            <img class="car-img-top" scr="~/img/@item.ImageUrl" alt="Card image cap" />
+
+            <div class="card-block">
+                <h4 class="card-title">@item.Title</h4>
+                <p class="card-text">@item.Description</p>
+                <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Blog Details</a>
+            </div>
+        </div>
+    }
+}

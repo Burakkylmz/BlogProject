@@ -145,20 +145,14 @@ Project Documantation
 
 	11.1. Type the followinf code into HomeController.cs
 
-	public IAcionResult Index()
-	{
-		return View();
-	}
+	11.2. Right click Models Folder and add the HomeBlogModel.cs
+	11.3. Type the following code into HomeBlogModel.cs
 
-	public IActionResult List()
-	{
-		retun View();
-	}
-
-	public IActionResult Details()
-	{
-		return View();
-	}
+	public class HomeBlogModel
+    {
+        public virtual List<Blog> SliderBlogs { get; set; }
+        public virtual List<Blog> HomeBlogs { get; set; }
+    }
 
 
 

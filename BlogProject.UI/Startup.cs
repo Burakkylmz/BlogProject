@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using BlogProject.DAL.BaseRepository;
 using BlogProject.DAL.Context;
+using BlogProject.DAL.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -29,6 +31,8 @@ namespace BlogProject.UI
             var conntection = "Server=DESKTOP-TJVLSIK;Database=BlogProjectDB;Integrated Security=true;";
             services.AddDbContext<ProjectContext>
                 (options => options.UseSqlServer(conntection));
+            services.AddTransient<ICategoryRepository, EFCategoryRepository>();
+            services.AddTransient<IBlogRepository, EFBlogRepository>();
             services.AddMvc();
         }
 
@@ -56,6 +60,8 @@ namespace BlogProject.UI
             {
                 FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "node_modules")), RequestPath = "/modules"
             });
+
+            SeedData.Seed(app);
         }
     }
 }

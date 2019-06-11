@@ -17,6 +17,7 @@ namespace BlogProject.UI.Controllers
             blogRepository = repository;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             var model = new HomeBlogModel();
@@ -25,6 +26,18 @@ namespace BlogProject.UI.Controllers
             model.SliderBlogs = blogRepository.GetAll().Where(x => x.isActive && x.isSlider).ToList();
 
             return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult List()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult Details()
+        {
+            return View();
         }
     }
 }
