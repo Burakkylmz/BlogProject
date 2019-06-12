@@ -33,9 +33,9 @@ namespace BlogProject.DAL.Repository
             {
                 context.Blogs.AddRange(
                     new Blog() { Title="Blog Title 1", Description="Blog Description", Body="Blog Body 1", ImageUrl="1.jpeg", AddDate=DateTime.Now.AddDays(-5), isActive=true, CategoryId=1},
-                    new Blog() { Title = "Blog Title 2", Description = "Blog Description", Body = "Blog Body 2", ImageUrl = "2.jpeg", AddDate = DateTime.Now.AddDays(-5), isActive = true, CategoryId = 1 },
-                    new Blog() { Title = "Blog Title 3", Description = "Blog Description", Body = "Blog Body 3", ImageUrl = "3.jpeg", AddDate = DateTime.Now.AddDays(-5), isActive = true, CategoryId = 1 },
-                    new Blog() { Title = "Blog Title 4", Description = "Blog Description", Body = "Blog Body 4", ImageUrl = "4.jpeg", AddDate = DateTime.Now.AddDays(-5), isActive = true, CategoryId = 1 }
+                    new Blog() { Title = "Blog Title 2", Description = "Blog Description", Body = "Blog Body 2", ImageUrl = "2.jpeg", AddDate = DateTime.Now.AddDays(-5), isActive = true, CategoryId = 2},
+                    new Blog() { Title = "Blog Title 3", Description = "Blog Description", Body = "Blog Body 3", ImageUrl = "3.jpeg", AddDate = DateTime.Now.AddDays(-5), isActive = true, CategoryId = 3 },
+                    new Blog() { Title = "Blog Title 4", Description = "Blog Description", Body = "Blog Body 4", ImageUrl = "4.jpeg", AddDate = DateTime.Now.AddDays(-5), isActive = true, CategoryId = 4 }
                     );
 
                 context.SaveChanges();

@@ -4,16 +4,16 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@model HomeBlogModel
+@model  IEnumerable<Blog>
 
-<div class="container mt-15">
+<div class="container mt-3">
     <div class="row">
         <div class="col-md-3">
-            @await Component.InvokeAsync("CategoryMenu")
+            
         </div>
         <div class="col-md-9">
-            <partial name="_Slider.cshtml" />
             <partial name="_BlogList" />
         </div>
     </div>
 </div>
+

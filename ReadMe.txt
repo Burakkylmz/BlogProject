@@ -158,5 +158,10 @@ Project Documantation
 
 	Microsoft.EntityFrameworkCore.Tools.DotNet
 
+	UI dizininden cmd y aö
+
+	dotnet ef migratiions add InitialCreate
+
+
 
 	

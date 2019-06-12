@@ -15,5 +15,7 @@ namespace BlogProject.DAL.Context
 
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Category> Categories { get; set; }
+
+        
     }
 }

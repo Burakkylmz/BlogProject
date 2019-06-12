@@ -1,0 +1,17 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model IEnumerable<Category>
+
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        <a asp-controller="Blog"
+           asp-action="Index"
+           asp-route-id="@item.Id"
+           class="list-group-item @(ViewBag.SelectedCategory==item.Id.ToString()?"active":"")">
+            @item.Name
+        </a>
+    }
+</div>
