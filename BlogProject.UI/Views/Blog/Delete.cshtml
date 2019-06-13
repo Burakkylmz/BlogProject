@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Blog
+
+<h2>
+    <b>@Model.Title</b> isimli kaydı silmek istiyor musunuz?
+</h2>
+
+<form asp-controller="Blog" asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-pirimary">Delete</button>
+</form>

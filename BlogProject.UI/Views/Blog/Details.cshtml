@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model Blog
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-3">
+            @*@await Components.InvokeAsync("CategoryMenu")*@
+        </div>
+        <div class="col-md-9">
+            <div class="card-header">
+                @Model.Title
+            </div>
+            <img class="card-img-top" src="~/img/@Model.ImageUrl" alt="@Model.Title" />
+
+            <div class="card-block">
+                <h4 class="card-title">@Model.Title</h4>
+                <p class="card-text">@Model.Description</p>
+                <p class="card-text">@Html.Raw(Model.Body)</p>
+            </div>
+        </div>
+    </div>
+</div>
+
